@@ -36,10 +36,11 @@ testloader_label = loader_set(labeltestset, batch_size)
 trainloader_unlabel = loader_set(unlabeltrainset, batch_size)
 devloader_unlabel = loader_set(unlabeldevset, batch_size)
 testloader_unlabel = loader_set(unlabeltestset, batch_size)
+epoches = 30
 
 
 # label_traindata, unlabel_traindata, unlabel_devdata, unlabel_testdata, epoches, model,learnig_rate
-train(trainloader_label, trainloader_unlabel, devloader_unlabel,testloader_unlabel, 10, WasserAda, learning_rate)
+train(trainloader_label, trainloader_unlabel, devloader_unlabel,testloader_unlabel, epoches, WasserAda, learning_rate)
 print("suc")
 
 
